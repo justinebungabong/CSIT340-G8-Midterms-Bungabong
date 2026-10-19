@@ -18,6 +18,12 @@ function Guide() {
                 description="Sends the main branch to the remote named origin."
                 command="git push -u origin main"
             />
+
+            <Section 
+                title="Connect"
+                description="Links this local project to your forked repository on GitHub, under the name origin."
+                command="git remote add origin <YOUR-FORKED-REPO-URL>"
+            />
         </main>
       </>
     );
