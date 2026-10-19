@@ -1,6 +1,25 @@
+import { useState } from "react";
 import Header from "./Header";
 import StatCard from "./StatCard";
-function Docs(handleRead, handleBookmark, handleReset, read, bookmarks) {
+
+
+function Docs() {
+    const [read, setRead] = useState(0);
+    const [bookmarks, setBookmarks] = useState(0);
+
+    function handleRead() {
+    setRead(read + 1);
+  }
+
+  function handleBookmark() {
+    setBookmarks(bookmarks + 1);
+  }
+
+  function handleReset() {
+    setRead(0);
+    setBookmarks(0);
+  }
+
     return (
     <div className="flex items-end justify-between px-20 pt-10">
         <div>
