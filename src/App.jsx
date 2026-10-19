@@ -29,7 +29,8 @@ function App() {
         handleBookmark={handleBookmark}
         handleReset={handleReset}
       />
-
+      
+    
       <main className="px-20 pt-4">
         <section className="border-t border-[#C9996B] py-3">
           <h3 className="text-2xl font-bold">Create</h3>
